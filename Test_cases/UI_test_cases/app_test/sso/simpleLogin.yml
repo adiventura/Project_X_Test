@@ -1,7 +1,7 @@
 appId: com.ventura.mvp
 ---
 - launchApp
-# - tapOn: "Ventura X"
+- tapOn: "Ventura X"
  #- clearState: true
 # - tapOn:
 #     id: "com.miui.home:id/icon_icon"
