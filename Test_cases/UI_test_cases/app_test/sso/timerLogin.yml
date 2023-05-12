@@ -1,0 +1,49 @@
+appId: com.ventura.mvp
+---
+- launchApp
+- tapOn:
+    id: "com.miui.home:id/icon_icon"
+    index: 0
+- tapOn: "Login"
+- assertVisible: "Enter mobile number / email / client ID"
+- tapOn: 
+    text: "Enter mobile number / email / client ID"
+- inputText: "test64"
+- tapOn: "Continue"
+- assertVisible: "Account locked temporarily"
+- assertVisible: "Forgot PIN?"
+- tapOn: "Forgot PIN?"
+- tapOn: "AGMLS6667Z"
+- inputText: "DAQRF4567C"
+- waitForAnimationToEnd:
+    timeout: 2000
+- assertVisible: "Please Enter Valid PAN"
+- eraseText
+- tapOn: "AGMLS6667Z"
+- inputText: "AKKPA2553K"
+- tapOn : "continue"
+- waitForAnimationToEnd:
+    timeout: 5000
+- assertVisible: "Enter OTP input field"
+- tapOn: "Enter OTP input field"
+- inputText: "123456"
+- tapOn: "Allow"
+- tapOn: "Verify"
+- waitForAnimationToEnd:
+    timeout: 2500
+- assertVisible: "Set new PIN"
+- tapOn: "Set new PIN enter PIN input field"
+- inputText: "1234"   
+- tapOn: "Set new PIN re-enter PIN input field"
+- inputText: "1245"
+- assertVisible: "PIN does not match"
+- tapOn: "Set new PIN re-enter PIN input field\n1\n2\n4\n5"
+- eraseText
+- inputText: "1234"
+- tapOn: "Change PIN"
+- assertVisible:
+    text: "PIN set successfully"
+- tapOn: 
+    text: "Try again"
+    optional: true
+# welocme to dashboard 
