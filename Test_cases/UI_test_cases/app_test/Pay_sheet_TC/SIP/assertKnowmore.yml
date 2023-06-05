@@ -1,0 +1,9 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- scroll
+- assertVisible: "Know More"

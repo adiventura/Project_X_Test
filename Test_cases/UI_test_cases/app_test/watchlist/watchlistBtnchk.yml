@@ -1,0 +1,17 @@
+appId: com.ventura.mvp
+---
+# btn check
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Login with PIN input field"
+- inputText: "1234"
+# welcome to dashboard
+- tapOn: "Explore all funds"
+- tapOn: "MF-ITEM"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully added to your watchlist"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully removed from your watchlist"
+- back
+- back

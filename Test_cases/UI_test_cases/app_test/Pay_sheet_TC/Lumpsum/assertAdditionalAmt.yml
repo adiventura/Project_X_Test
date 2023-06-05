@@ -1,0 +1,12 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "Lumpsum"
+- assertVisible: "+ ₹10,000"
+- assertVisible: "+ ₹25,000"
+- assertVisible: "+ ₹50,000"
+- back
+- back

@@ -1,0 +1,12 @@
+appId: com.ventura.mvp
+---
+- runFlow:
+    file: simpleLogin.yml
+# launch to dashboard
+- tapOn: "Explore all funds"
+- tapOn: "Lumpsum"
+- tapOn: "Minimum  amount: ₹100"
+- back
+- back
+- back
+#user  is able to interact with amount input button

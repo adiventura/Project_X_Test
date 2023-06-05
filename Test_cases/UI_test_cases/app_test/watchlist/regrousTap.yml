@@ -1,0 +1,24 @@
+appId: com.ventura.mvp
+---
+#Regrous tap
+# - launchApp
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Login with PIN input field"
+- inputText: "1234"
+# launch to dashboard
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn: "Explore all funds"
+- tapOn: "MF-ITEM"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully added to your watchlist"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully removed from your watchlist"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully added to your watchlist"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully removed from your watchlist"
+- back
+- back

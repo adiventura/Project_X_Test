@@ -1,0 +1,12 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "Lumpsum"
+- tapOn: "Minimum  amount: ₹100"
+- inputText: "99"
+- assertVisible: "Minimum Lumpsum amount is ₹100"
+- back
+- back

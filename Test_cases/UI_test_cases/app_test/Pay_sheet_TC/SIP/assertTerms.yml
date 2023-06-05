@@ -1,0 +1,10 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- scroll
+- assertVisible: "Terms of Use"
+# user is able to put upto 8 digit value

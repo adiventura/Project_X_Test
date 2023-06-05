@@ -1,0 +1,33 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Login"
+- assertVisible: "Enter mobile number / email / client ID"
+- tapOn: 
+    text: "Enter mobile number / email / client ID"
+- inputText: "test64"
+- tapOn: "Continue"
+- tapOn: "Login with PIN input field"
+- inputText: "1234"
+- assertVisible: "Enter OTP input field"
+- tapOn: "Enter OTP input field"
+- inputText: "123456"
+- tapOn: "Verify"
+- waitForAnimationToEnd:
+    timeout: 2500
+- tapOn: "Skip for now"
+- tapOn: 
+    text: "Try again"
+    optional: true
+# launch to dashboard
+- tapOn: "Explore all funds"
+- tapOn: "MF-ITEM"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully added to your watchlist"
+- tapOn: "BOOKMARK"
+- assertVisible: "Scheme has been successfully removed from your watchlist"
+- back
+#
