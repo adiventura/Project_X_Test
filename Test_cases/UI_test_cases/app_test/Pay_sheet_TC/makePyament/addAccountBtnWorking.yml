@@ -1,0 +1,23 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- tapOn: "Continue to make payment"
+- scroll
+- tapOn: "Add account"
+- assertVisible: "Add bank account"
+
+# user is able to add new upi 
+# should assert on sip paymnet page also like added upi is visivle in sip page
+
+
+
+
+

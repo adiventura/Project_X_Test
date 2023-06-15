@@ -1,0 +1,51 @@
+appId: com.ventura.mvp
+---
+# - runFlow:
+#     file: simpleLogin.yml
+# launch to dashboard
+- tapOn: "Explore all funds"
+- tapOn: "Lumpsum"
+- tapOn: "Minimum  amount: ₹100"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+- tapOn: "+ ₹10,000"
+- tapOn: "+ ₹25,000"
+- tapOn: "+ ₹50,000"
+# - inputText: "450500"
+# - tapOn: "+ ₹10,000"
+# - assertVisible: "₹4,60,500"
+# - tapOn: "+ ₹25,000"
+# - assertVisible: "₹4,85,500"
+# - tapOn: "+ ₹50,000"
+# - assertVisible: "₹5,35,500"
+
+# need lables for it.
+
+
+
+

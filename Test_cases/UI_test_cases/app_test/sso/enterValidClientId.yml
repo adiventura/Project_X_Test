@@ -2,10 +2,24 @@ appId: com.ventura.mvp
 ---
 - launchApp
 - tapOn: "Login"
-- assertVisible: "Enter mobile number / email / client ID"
 - tapOn: 
     text: "Enter mobile number / email / client ID"
+- inputText: "tes"
+- assertVisible: "Please enter valid details"
+- eraseText
+- inputText: "test"
+- assertNotVisible:
+    text: "Please enter valid details"
+    enabled: true
+- eraseText: 1
+- waitForAnimationToEnd
+- assertVisible: "Please enter valid details"
+- eraseText
 - inputText: "test64"
+- assertNotVisible:
+    text: "Please enter valid details"
+    enabled: true
+# check that valid details warning behaves correctly    
 - tapOn: "Continue"
 - tapOn: "Login with PIN input field"
 - inputText: "1234"

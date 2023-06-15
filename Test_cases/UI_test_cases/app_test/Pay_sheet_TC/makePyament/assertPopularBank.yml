@@ -1,0 +1,21 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- tapOn: "Continue to make payment"
+- scrollUntilVisible:
+    element: "Add account" 
+    direction: DOWN
+- tapOn: "Add account"
+- assertVisible: "POPULAR BANKS"
+- assertVisible: "Axis Bank"
+- assertVisible: "HDFC Bank"
+- assertVisible: "ICICI Bank"
+- assertVisible: "State Bank of India"

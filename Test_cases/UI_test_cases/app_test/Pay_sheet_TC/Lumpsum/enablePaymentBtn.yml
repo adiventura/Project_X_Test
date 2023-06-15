@@ -1,0 +1,15 @@
+appId: com.ventura.mvp
+---
+- runFlow:
+    file: simpleLogin.yml
+# launch to dashboard
+- tapOn: "Explore all funds"
+- tapOn: "Lumpsum"
+- tapOn: "Minimum  amount: ₹100"
+- inputText: "100"
+- back
+- tapOn: "Continue to make payment"
+- back
+- assertVisible: "Lumpsum payment"
+# to check payment button is working.
+# this test case wont run in maestro cloud.

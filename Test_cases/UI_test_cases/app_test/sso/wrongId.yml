@@ -1,10 +1,19 @@
 appId: com.ventura.mvp
 ---
 - launchApp
+ # when user enter flase client id
 - tapOn: "Login"
 - assertVisible: "Enter mobile number / email / client ID"
 - tapOn: 
     text: "Enter mobile number / email / client ID"
+- inputText: "venrandom"
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn: "Continue"
+- waitForAnimationToEnd:
+    timeout: 2000
+- tapOn: "Try again"
+- eraseText
 - inputText: "test64"
 - tapOn: "Continue"
 - tapOn: "Login with PIN input field"

@@ -1,0 +1,20 @@
+appId: com.ventura.mvp
+---
+- launchApp
+- tapOn: "Login"
+- assertVisible: "Enter mobile number / email / client ID"
+- tapOn: 
+    text: "Enter mobile number / email / client ID"
+- inputText: "test64"
+- tapOn: "Continue"
+# - assertVisible: "Account locked temporarily"
+- tapOn: "Forgot PIN?"
+- tapOn: "AGMLS6667Z"
+- inputText: "DAQRF4567C"
+- assertVisible: "Please Enter Valid PAN"
+- waitForAnimationToEnd
+- eraseText
+- tapOn: "AGMLS6667Z"
+- inputText: "AKKPA2553K"
+- tapOn : "continue"
+# welocme to dashboard 

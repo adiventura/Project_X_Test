@@ -1,17 +1,18 @@
 appId: com.ventura.mvp
 ---
 # btn check
-# - runFlow:
-#     file: simpleLogin.yml
-- tapOn: "Ventura X"
-- tapOn: "Login with PIN input field"
-- inputText: "1234"
+- runFlow:
+    file: simpleLogin.yml
+# - tapOn: "Ventura X"
 # welcome to dashboard
 - tapOn: "Explore all funds"
 - tapOn: "MF-ITEM"
 - tapOn: "BOOKMARK"
+- waitForAnimationToEnd
 - assertVisible: "Scheme has been successfully added to your watchlist"
 - tapOn: "BOOKMARK"
+- waitForAnimationToEnd
 - assertVisible: "Scheme has been successfully removed from your watchlist"
 - back
 - back
+# To check where user able to interact with the bookmark button.

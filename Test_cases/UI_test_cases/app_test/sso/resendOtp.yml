@@ -1,4 +1,4 @@
-appId: com.ventura.mvp
+# to verify that  resend button is workingappId: com.ventura.mvp
 ---
 - launchApp
  # when user enter flase opt 
@@ -10,7 +10,6 @@ appId: com.ventura.mvp
 - tapOn: "Continue"
 - tapOn: "Login with PIN input field"
 - inputText: "1234"
-- assertVisible: "Enter OTP input field"
 - tapOn: "Enter OTP input field"
 - inputText: "178456"
 - tapOn: "Verify"

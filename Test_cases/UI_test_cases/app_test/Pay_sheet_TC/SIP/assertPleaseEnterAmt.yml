@@ -1,0 +1,14 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText: "343"
+- eraseText
+- assertVisible: "Please enter the amount."
+# to assert please enter amount
+- back
+- back

@@ -1,0 +1,18 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- scroll
+- tapOn: "Continue to make payment"
+- tapOn: "Add UPI ID"
+- tapOn: "Switch account"
+- assertVisible: "Switch Account"
+- tapOn: "State Bank of India\n XXXX XXX 7618"
+- assertVisible: "State Bank of India\n XXXX XXX 7618"
+# user is able to swtich bank account

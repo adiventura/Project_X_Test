@@ -1,0 +1,28 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- scroll
+- tapOn: "Continue to make payment"
+- tapOn: "Add UPI ID"
+- tapOn: "Enter your UPI ID"
+- inputText: "9504480398@upi"
+- tapOn: "Verify"
+- tapOn: "Add UPI ID"
+- assertVisible: "Your UPI details have been successfully verified. Make hassle-free\
+    \ investments through UPI payments."
+- assertVisible: "UPI ID added successfully"
+- tapOn: "Done"
+# user is able to add new upi 
+# should assert on sip paymnet page also like added upi is visivle in sip page
+
+
+
+
+

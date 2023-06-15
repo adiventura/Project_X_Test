@@ -6,7 +6,12 @@ appId: com.ventura.mvp
 - tapOn: "Explore all funds"
 - tapOn: "Lumpsum"
 - tapOn: "Minimum  amount: ₹100"
-- back
-- back
-- back
-# in complete
+- inputText: "450500"
+- tapOn: "+ ₹10,000"
+- assertVisible: "₹4,60,500"
+- tapOn: "+ ₹25,000"
+- assertVisible: "₹4,85,500"
+- tapOn: "+ ₹50,000"
+- assertVisible: "₹5,35,500"
+
+# in completeya

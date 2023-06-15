@@ -4,12 +4,13 @@ appId: com.ventura.mvp
 - runFlow:
     file: simpleLogin.yml
 - tapOn: "Explore all funds"
-- tapOn: "Lumpsum"
+- tapOn: "SIP"
 - tapOn: "Minimum  amount: ₹100"
-- inputText: "0"
-- assertVisible: "Minimum Lumpsum amount is ₹100"
+- inputText: "67"
+- back
+- scroll
 - tapOn: "Continue to make payment"
 - assertVisible: "Please enter the details correctly"
 - back
 - back
-# user not allowed to make payment when he enter the amount 0.
+# to check payment button is diabled when data is not filled

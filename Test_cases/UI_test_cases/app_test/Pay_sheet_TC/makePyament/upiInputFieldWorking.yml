@@ -1,0 +1,14 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- scroll
+- tapOn: "Continue to make payment"
+
+# user is able to put upto 8 digit value

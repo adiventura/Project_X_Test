@@ -7,4 +7,6 @@ appId: com.ventura.mvp
 - tapOn: "SIP"
 - tapOn: "31st of Every Month"
 - assertVisible: "Choose SIP Date"
-# this need a lable
+- tapOn: "2"
+- assertVisible: "2nd of Every Month"
+#need lables for date

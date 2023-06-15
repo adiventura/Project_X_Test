@@ -1,0 +1,82 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+# - runFlow:
+#     file: simpleLogin.yml
+- tapOn: "Ventura X"
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- tapOn: "Continue to make payment"
+- scroll
+- tapOn: "Add account"
+- assertVisible: "Add bank account"
+- assertVisible: "ALL BANKS"
+- scrollUntilVisible:
+    element: "Axis Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Bandhan Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Bank of Baroda" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Bank of India" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Bank of Maharashtra" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Canara Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Central Bank of India" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Federal Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "HDFC Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "ICICI Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "IDBI" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "IDFC FIRST Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Indian Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Indian Overseas Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Indusind Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Kotak Mahindra Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Punjab National Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "State Bank of India" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "UCO Bank" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Union Bank of India" 
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Yes Bank" 
+    direction: DOWN
+
+
+# assert all banks are available

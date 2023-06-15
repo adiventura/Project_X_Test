@@ -1,6 +1,7 @@
 appId: com.ventura.mvp
 ---
 - launchApp
+# - tapOn: "Ventura X"
 - tapOn: "Login"
 - assertVisible: "Enter mobile number / email / client ID"
 - tapOn: 

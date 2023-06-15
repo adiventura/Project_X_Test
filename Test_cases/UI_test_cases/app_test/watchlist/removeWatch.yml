@@ -1,20 +1,20 @@
 appId: com.ventura.mvp
 ---
 # - launchApp
-# - runFlow:
-#     file: simpleLogin.yml
+- runFlow:
+    file: simpleLogin.yml
 # remove watchlst
-- tapOn: "Ventura X"
-- tapOn: "Login with PIN input field"
-- inputText: "1234"
 # launch to dashboard
 - waitForAnimationToEnd:
     timeout: 3000
 - tapOn: "Explore all funds"
 - tapOn: "MF-ITEM"
 - tapOn: "BOOKMARK"
+- waitForAnimationToEnd
 - assertVisible: "Scheme has been successfully added to your watchlist"
 - tapOn: "BOOKMARK"
+- waitForAnimationToEnd
 - assertVisible: "Scheme has been successfully removed from your watchlist"
 - back
 - back
+# to see user able to remove the scheme from his watchlist

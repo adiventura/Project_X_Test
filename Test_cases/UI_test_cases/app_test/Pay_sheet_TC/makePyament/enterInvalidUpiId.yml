@@ -1,0 +1,26 @@
+appId: com.ventura.mvp
+---
+# - launchApp
+- runFlow:
+    file: simpleLogin.yml
+- tapOn: "Explore all funds"
+- tapOn: "SIP"
+- tapOn: "Minimum  amount: ₹100"
+- inputText : "100"
+- back
+- scroll
+- tapOn: "Continue to make payment"
+- tapOn: "Add UPI ID"
+- tapOn: "Enter your UPI ID"
+- inputText: "9562056451@axl"
+- tapOn: "Verify"
+- assertVisible: "Invalid UPI ID"
+- tapOn: "Add UPI ID"
+- assertVisible: "To avoid payment failures, it’s best to enter the UPI ID of the\
+    \ bank account(s) linked to your Ventura account."
+# user is not able to add ivalid upi id
+
+
+
+
+
